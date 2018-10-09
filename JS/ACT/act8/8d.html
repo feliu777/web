@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+
+<body>
+    <script>
+        var num1;
+        var num2;
+        var sa1;
+        var sa2;
+        num1=prompt("Sueldo:","");
+        num2=prompt("Años:","");
+        if (parseInt(num1)<500 && parseInt(num2)>=10){
+            sa1=num1*1.2;
+            document.write("Saldo del proximo año"+" "+sa1);
+        }
+        else if (parseInt(num1)<500 && parseInt(num2)<10){
+            sa2=num1*1.05;
+            document.write("Saldo del proximo año"+" "+sa2)
+        }
+        else if (parseInt(num1)>500){
+            document.write("No incrementa")
+        }
+    </script>
+</body>
+</html>

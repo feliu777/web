@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+
+<body>
+    <script>
+        var num1=1;
+        x=0;
+        par=0;
+        impar=0;
+        while (num1<=5) {
+            num2=prompt("Numero: "+num1,"");
+            num1=num1+1;
+            x=parseInt(num2)%2;
+            if (x==0) {
+                x=document.write("El numero "+num2+" es par");
+                par=par+1;
+            }
+            else
+                x=document.write("El numero " +num2+" es impar");
+                document.write('<br>');
+                impar=impar+1
+        }
+        document.write("Total de numeros pares: "+par);
+        document.write("<br>")
+        document.write("Total de numeros impares: "+impar);
+    </script>
+</body>
+</html>

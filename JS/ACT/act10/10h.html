@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+
+<body>
+    <script>
+        var x=1;
+        var y=1;
+        var suma1=0;
+        var suma2=0;
+        while (x <=3){
+            a=prompt("lista 1" +"numero "+x,"");
+            x=x+1;
+            suma1=parseInt(suma1)+parseInt(a);
+        }
+        while (y <=3){
+            b=prompt("lista 2 "+"numero "+y,"");
+            y=y+1;
+            suma2=parseInt(suma2)+parseInt(b);
+        }
+        if (suma1 > suma2) {
+            document.write("Suma lista 1 "+suma1);
+        }
+        else{
+            document.write("Suma lista 2: "+suma2);
+        }
+    </script>
+</body>
+</html>
