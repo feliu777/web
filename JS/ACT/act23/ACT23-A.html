@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        function sp() {
+            var m1='';
+            if (document.getElementById("1").checked) {
+                m1+='Football ';
+            }
+            if (document.getElementById("2").checked) {
+                m1+='Tennis ';
+            }
+            if (document.getElementById("3").checked) {
+                m1+='Karate ';
+            }
+            alert("You have selected the following sports: "+m1);
+        }
+    </script>
+    <form>
+        <input type="checkbox" id="1">Football<br>
+        <input type="checkbox" id="2">Tennis<br>
+        <input type="checkbox" id="3">Karate<br>
+        <input type="button" value="Submit" onClick="sp()">
+    </form>
+</body>
+</html>

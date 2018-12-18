@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var m1=prompt('Enter some text:','');
+		var word=prompt('Now enter a word to search in your text:','')
+		var search=m1.indexOf(word);
+		if (search==-1) {
+			document.write('That word doesn\'t appear in your text');
+		}
+		else
+			document.write('The word \''+word+'\' appears at position '+search);
+	</script>
+</body>
+</html>

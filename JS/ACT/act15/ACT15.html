@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		d=new Date();
+		month=parseInt(d.getMonth());
+		document.write("It's month number...");
+		document.write('<br>');
+		document.write(month);
+		document.write('<br>');
+
+		if (month<=2)
+		{
+			document.write('1st term')
+		}
+		else if (month>=3 && month<=5)
+		{
+			document.write('2nd term')
+		}
+		else if (month>=6 && month<=8)
+		{
+			document.write('3rd term')
+		}
+		else if (month>=9 && month<=11)
+		{
+			document.write('4th term')
+		}
+		else
+			document.write('xd')
+	</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function func(){
+			var m1=document.getElementById('t1').value;
+			var m2=document.getElementById('t2').value;
+			if (m1==m2) {
+				alert('The passwords are equal');
+			}
+			else
+				alert('The passwords are not equal');
+		}
+	</script>
+		<form>
+			Introduce a password:<br>
+			<input type="password" name="field" id="t1">
+			<br><br>
+			Repeat your password:<br>
+			<input type="password" name="field" id="t2">
+			<br>
+		</form>
+		<br><br>
+		<button onclick="func()">Validate password</button>
+</body>
+</html>

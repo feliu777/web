@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        function age() {
+            if (document.getElementById('m1').checked) {
+                alert('You\'re in legal age, access permitted');
+            }
+            if (document.getElementById('m2').checked) {
+                alert('You\'re not in legal age, access denied');
+            }
+        }
+    </script>
+    <form>
+        <input type="radio" id="m1" value="18" name="A">18+ years old<br/>
+        <input type="radio" id="m2" value="17"name="B">Less than 18 years old<br/>
+        <input type="submit" value="Check" onClick="age()">
+    </form>
+</body>
+</html>

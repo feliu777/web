@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript">
+        var m1=0;
+        var sum=0
+        do {
+            m1=prompt('Enter an account number: ','0');
+            m2=prompt("Enter the account's owner name: ",'');
+            m3=prompt('Enter a sum of money: ','0');
+            document.write(m2+' is the owner of the account with ID '+m1+', and has '+m3+' euros inside');
+            document.write('<br>');
+            sum=parseInt(sum)+parseInt(m3);
+    } while(m1!=0);
+
+    document.write('<br>');
+    document.write('Sum total is: '+sum);
+    </script>
+</body>
+</html>

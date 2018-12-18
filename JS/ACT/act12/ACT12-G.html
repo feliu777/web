@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript">
+        var m1=1;
+        var sumA=0;
+        var avgA=0;
+        var sumB=0;
+        var avgB=0;
+        var sumC=0;
+        var avgC=0;
+        for(m1=1;m1<=5;m1++) {
+            var classA=prompt('Enter 5 marks for class A ( Count: '+m1+')','0');
+            document.write('Class A: '+classA);
+            document.write('<br>');
+            var sumA=parseInt(sumA)+parseInt(classA);
+        }
+        var avgA=parseInt(sumA)/5;
+        document.write('<br>');
+        document.write('-Class A average is: '+avgA);
+
+        document.write('<br>');
+        document.write('<br>');
+
+        var m2=1;
+        for(m2=1;m2<=6;m2++) {
+            var classB=prompt('Enter 6 marks for class B ( Count: '+m2+')','0');
+            document.write('Class B: '+classB);
+            document.write('<br>');
+            var sumB=sumB+parseInt(classB);
+        }
+        var avgB=parseInt(sumB)/6;
+        document.write('<br>');
+        document.write('-Class B average is: '+avgB);
+
+        document.write('<br>');
+        document.write('<br>');
+
+        var m3=1;
+        for(m3=1;m3<=11;m3++) {
+            var classC=prompt('Enter 11 marks for class C ( Count: '+m3+')','0');
+            document.write('Class C: '+classC);
+            document.write('<br>');
+            var sumC=sumC+parseInt(classC);
+        }
+        var avgC=parseInt(sumC)/11;
+        document.write('<br>');
+        document.write('-Class C average is: '+avgC);
+
+        document.write('<br>');
+        document.write('<br>');
+        if (avgA>avgB && avgA>avgC)
+        {
+            document.write('*Class A has higher average marks');
+        }
+        else if (avgB>avgA && avgB>avgC)
+        {
+            document.write('*Class B has higher average marks');
+        }
+        else if (avgC>avgA && avgC>avgB)
+        {
+            document.write('*Class C has higher average marks');
+        }
+    </script>
+</body>
+</html>

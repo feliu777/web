@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        function pre() {
+            var op=document.getElementById("pizzas");
+            var m1=parseInt(document.getElementById("num").value);
+            var m2=parseInt(op.options[op.selectedIndex].value);
+            var m3=parseInt(m1*m2);
+            document.getElementById('text').value=m3;
+        }
+    </script>
+    <select id="pizzas">
+        <option>Choose a pizza</option>
+        <option value="6">Pepperoni</option>
+        <option value="5">Quatro Formaggi</option>
+        <option value="4">Procciuto</option>
+    </select><br>
+    How many pizzas do you want? <input type="text" id="num"><br>
+    Total:<input type="text" id="text"><br>
+    <button onClick="pre()">Price</button>
+</body>
+</html>

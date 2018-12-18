@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var m1=0;
+		var sum=0
+		do {
+			m1=prompt('Enter a number: ','0');
+			sum=parseInt(sum)+parseInt(m1);
+			document.write('Number introduced: '+m1);
+			document.write('<br>');
+	} while(m1!=9999);
+
+	document.write('Sum total is: '+sum);
+	document.write('<br>');
+	if (sum<0)
+		{
+			x=document.write('NEGATIVE');
+		}
+		else if (sum==0)
+		{
+			x=document.write('ZERO');
+		}
+		else if (sum>0)
+		{
+			x=document.write('POSITIVE');
+		}
+	</script>
+</body>
+</html>

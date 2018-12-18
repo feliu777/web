@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function func(){
+			var m1=document.getElementById('t1').value;
+			var square=Math.pow(m1,2)
+			alert('The square of '+m1+' is '+square)
+		}
+	</script>
+		<form>
+			Introduce a number:<br><br>
+			<input type="text" name="field" id="t1" value="0">
+		</form>
+		<br><br>
+		<button onclick="func()">Square this number</button>
+</body>
+</html>

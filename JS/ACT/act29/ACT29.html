@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        function openWindow() {
+            var m1=open('width=400px , height=300px');
+            m1.document.write('Hi there<br><br>');
+            m1.document.write('<button onclick=\"self.close()\">Close this window</button>');
+        }
+    </script>
+    Press this button to open a new window<br><br>
+    <button onclick="openWindow()">Open window</button>
+</body>
+</html>

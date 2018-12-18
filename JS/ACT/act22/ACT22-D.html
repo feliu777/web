@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Act-22</title>
+</head>
+<body>
+    <script>
+        function preg() {
+            var q1=document.getElementById("n1");
+            var p1=parseFloat(q1.options[q1.selectedIndex].value);
+            var q2=document.getElementById("n2");
+            var p2=parseFloat(q2.options[q2.selectedIndex].value);
+            var q3=document.getElementById("n3");
+            var p3=parseFloat(q3.options[q3.selectedIndex].value);
+            var q4=document.getElementById("n4");
+            var p4=parseFloat(q4.options[q4.selectedIndex].value);
+            var x=parseInt(p1+p2+p3+p4);
+            document.getElementById("text").value=x;
+        }
+    </script>
+    <p>Where is the Eiffel Tower?</p>
+    <select id="n1">
+        <option>Select</option>
+        <option value="0">Russia</option>
+        <option value="0">Mongolia</option>
+        <option value="2.5">France</option>
+    </select><br>
+    <p>Who was the first one to step on the Moon?</p>
+    <select id="n2">
+        <option>Select</option>
+        <option value="2.5">Neil Armstrong</option>
+        <option value="0">George Lucas</option>
+        <option value="0">Benito Mussolini</option>
+    </select><br>
+    <p>Where is the heart located?</p>
+    <select id="n3">
+        <option>Select</option>
+        <option value="2.5">Left</option>
+        <option value="0">Bottom</option>
+        <option value="0">Right</option>
+    </select><br>
+    <p>Which OS is open source?</p>
+    <select id="n4">
+        <option>Select</option>
+        <option value="0">Mirosoft Windows</option>
+        <option value="2.5">GNU/Linux</option>
+        <option value="0">Mac OS</option>
+    </select><br><br>
+    You scored:<input type="text" id="text"><br>
+    <button onClick="preg()">Score</button>
+</body>
+</html>

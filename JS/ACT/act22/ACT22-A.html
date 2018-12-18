@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        function piz() {
+            var op=document.getElementById("pizza");
+            document.getElementById("t").value=op.options[op.selectedIndex].value;
+        }
+    </script>
+    <form>
+        <select id="pizza" onChange="piz()">
+            <option value="0">Select an option</option><br>
+            <option value="6 euros">Pepperoni</option>
+            <option value="5 euros">Quatro Formaggi</option>
+            <option value="4 euros">Procciuto</option>
+        </select><br>
+        Precio:<input type="text" id="t">
+    </form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var m1=prompt('Enter a word:','');
+		var length_half=parseInt(m1.length)/2;
+		var slicer=m1.slice(0, length_half);
+		var last=m1.charAt(m1.length-1);
+		var reverse1=m1.split("");
+		var reverse2=reverse1.reverse();
+		var reverse3=reverse2.join("");
+		var splitter=m1.split("");
+		var splitter2=splitter.join(" ");
+		var matches=m1.match("a");
+		var vow='aeiouAEIOU';
+		var count=0;
+		var pos=0;
+		for (pos=0; pos<m1.length; pos++) {
+			if (vow.indexOf(m1[pos]) !==-1) {
+				count++
+			}
+		}
+		document.write('This word\'s first half is... '+slicer);
+		document.write('<br>');
+		document.write('<br>');
+		document.write('This word\'s last character is... '+last);
+		document.write('<br>');
+		document.write('<br>');
+		document.write('The reversed word is... '+reverse3);
+		document.write('<br>');
+		document.write('<br>');
+		document.write('This word has the following characters... '+splitter2);
+		document.write('<br>');
+		document.write('<br>');
+		document.write('This word has '+count+' vowels');
+	</script>
+</body>
+</html>

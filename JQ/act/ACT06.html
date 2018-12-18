@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title></title>
+	<script src="..\jquery_3-3-1.js"></script>
+</head>
+<body>
+	<table border="1px solid">
+		<tr id="t1">
+			<td class="c">OFF</td>
+			<td class="c">OFF</td>
+			<td class="c">OFF</td>
+		</tr>
+		<tr id="t2">
+			<td class="c">OFF</td>
+			<td class="c">OFF</td>
+			<td class="c">OFF</td>
+		</tr>
+		<tr id="t3">
+			<td class="c">OFF</td>
+			<td class="c">OFF</td>
+			<td class="c">OFF</td>
+		</tr>
+	</table>
+	<br>
+	<table border="1px solid">
+		<tr id="t4">
+			<td>OFF</td>
+			<td>OFF</td>
+			<td>OFF</td>
+		</tr>
+		<tr id="t5">
+			<td>OFF</td>
+			<td>OFF</td>
+			<td>OFF</td>
+		</tr>
+		<tr id="t6">
+			<td>OFF</td>
+			<td>OFF</td>
+			<td>OFF</td>
+		</tr>
+	</table>
+	<br>
+	<button id="b1">Show ON table 1</button>
+	<script>
+		$(document).ready(function(){
+			$("#b1").click(function(){
+				$(".c").text("ON");
+			});
+		});
+	</script>
+</body>
+</html>

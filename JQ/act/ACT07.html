@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title></title>
+	<script src="..\jquery_3-3-1.js"></script>
+</head>
+<body>
+	<a href="">Link here</a>
+	<br><br>
+	<button id="b1">To Google</button>
+	<button id="b2">To Yahoo!</button>
+	<button id="b3">To Bing</button>
+	<script>
+		$(document).ready(function(){
+			$("#b1").click(function(){
+				$("a").attr("href","https://www.google.com");
+			});
+			$("#b2").click(function(){
+				$("a").attr("href","https://www.yahoo.com");
+			});
+			$("#b3").click(function(){
+				$("a").attr("href","https://www.bing.com");
+			});
+		});
+	</script>
+</body>
+</html>

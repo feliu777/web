@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title></title>
+	<script src="..\jquery_3-3-1.js"></script>
+</head>
+<body>
+	<table border="1px solid">
+		<tr id="t1">
+			<th>lol</th>
+			<th>xd</th>
+		</tr>
+		<tr id="t2">
+			<td>1</td>
+			<td>2</td>
+		</tr>
+		<tr id="t3">
+			<td>3</td>
+			<td>4</td>
+		</tr>
+	</table>
+	<br>
+	<table border="1px solid">
+		<tr id="t4">
+			<th>lol</th>
+			<th>xd</th>
+		</tr>
+		<tr id="t5">
+			<td>1</td>
+			<td>2</td>
+		</tr>
+		<tr id="t6">
+			<td>3</td>
+			<td>4</td>
+		</tr>
+	</table>
+	<script>
+		$(document).ready(function(){
+			$("#t1").click(function(){
+				$(this).css("background-color","lightblue");
+			});
+			$("#t2").click(function(){
+				$(this).css("background-color","lightgreen");
+			});
+			$("#t3").click(function(){
+				$(this).css("background-color","red");
+			});
+			$("#t4").click(function(){
+				$(this).css("font-size","150%");
+			});
+			$("#t5").click(function(){
+				$(this).css("font-size","175%");
+			});
+			$("#t6").click(function(){
+				$(this).css("font-size","200%");
+			});
+		});
+	</script>
+</body>
+</html>
